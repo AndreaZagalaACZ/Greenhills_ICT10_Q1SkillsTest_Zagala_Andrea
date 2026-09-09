@@ -1,1 +1,43 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <title>Skills Test Q1 G10</title>
+    <style>
+        body {
+            background-image:url();
+            background-size: cover;
+            background-size: 150%, 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background: #fcedf2; font-family: "Comic Sans MS", cursive; color: #6d4b5a;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Coffee Shop Receipt</h2>
+        <h4>Menu:</h4>
+        <input type="checkbox" id="order1" value="99">
+        <label for="order1-label">Americano - 99</label><br>
+        <input type="checkbox" id="order2" value="129">
+        <label for="order2-label">Spanish Latte - 129</label><br>
+        <input type="checkbox" id="order3" value="175">
+        <label for="order3-label">Strawberry Frappe - 175</label><br><br>
+        <input type="checkbox" id="order4" value="149">
+        <label for="order4-label">Affogato - 149</label><br><br>
+        <input type="checkbox" id="order5" value="129">
+        <label for="order5-label">Caramel Macchiato - 129</label><br><br>
+        <input type="submit" py-mouseover="menuorder" value="Create Order">
+    </form>
+    <h4>=== Receipt: ===</h4>
+    <div id="result"></div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
