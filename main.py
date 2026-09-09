@@ -9,6 +9,7 @@ def menuorder(e):
     affogato = document.getElementById("order4")
     caramel_macchiato = document.getElementById("order5")
 
+    subtotal = 0
     subtotal += float(americano.value) * americano.checked
     subtotal += float(spanish_latte.value) * spanish_latte.checked
     subtotal += float(strawberry_frappe.value) * strawberry_frappe.checked
