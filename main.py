@@ -9,14 +9,13 @@ def menuorder(e):
     affogato = document.getElementById("order4")
     caramel_macchiato = document.getElementById("order5")
 
-    subtotal = float(americano.value) * americano.checked
-    subtotal = float(spanish_latte.value) * spanish_latte.checked
-    subtotal = float(strawberry_frappe.value) * strawberry_frappe.checked
-    subtotal = float(affogato.value) * affogato.checked
-    subtotal = float(caramel_macchiato.value) * caramel_macchiato.checked
+    subtotal += float(americano.value) * americano.checked
+    subtotal += float(spanish_latte.value) * spanish_latte.checked
+    subtotal += float(strawberry_frappe.value) * strawberry_frappe.checked
+    subtotal += float(affogato.value) * affogato.checked
+    subtotal += float(caramel_macchiato.value) * caramel_macchiato.checked
 
-    tax = subtotal % 12
+    tax = subtotal * 0.12
     total = subtotal + tax
     
     display(f'The subtotal is {subtotal} PHP. The tax is {tax} PHP. The total is {total} PHP. ', target='result')
-    
