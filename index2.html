@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <title>Skills Test Q1 G10</title>
+    <style>
+        body {
+            background-image:url();
+            background-size: cover;
+            background-size: 150%, 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background: #fcedf2; font-family: "Comic Sans MS", cursive; color: #6d4b5a;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }   
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        ul li.right {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            background-color: #111111;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="index.html">Receipt Generator</a></li>
+            <li><a href="index2.html">SKU Generator</a></li>
+            <li class="right">Skewer || Andrea C. Zagala</li>
+        </ul>
+        <h2>SKU Generator</h2>
+        <label>Category</label><br>
+            <select id="category" placeholder="e.g.">
+                <option>Sticker</option>
+                <option>Accessories</option>
+                <option>Plushie</option>
+                <option>Keychain</option>
+                <option>Stationery</option>
+                <option>Bag</option>
+                <option>Clothing</option>
+                <option>Other</option> 
+            </select><br><br>
+        <label>Product Name</label><br>
+        <input type="text" id="product_name" placeholder="e.g. Shoes"><br><br>
+        <label>Stock Quantity</label><br>
+        <input type="text" id="stock_quantity" placeholder="e.g. 10"><br><br>
+        <input type="submit" py-click="skugeneration" value="Generate SKU"><br><br> 
+        <div id="result2"></div>
+        <py-script src="main2.py"></py-script>
+    </div>
+</body> 
+</html>
